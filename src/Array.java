@@ -9,7 +9,8 @@ public class Array {
             arrayOfZeroTwo[i] = new Random().nextInt(2);
         }
         System.out.println(Arrays.toString(arrayOfZeroTwo));
-
+//        testArray();
+        System.out.println(Arrays.toString(testQuiz4(arrayOfZeroTwo)));
     }
 
 
@@ -27,20 +28,21 @@ public class Array {
         String[] cars = {"Ford Ranger", "Mitsubishi", "Subaru"};
 
         //Sample empty array
-        int[] number2 = new int[4];
+        int[] number2 = new int[10];
         String[] cars2 = new String[3];
 
-        // Try Print it out!
-//        System.out.println(number);
 
-        // What is index?
-//        System.out.println(number[0]);
+        // Try Print it out!
+//        System.out.println(Arrays.toString(number2));
 
 
         // You can change your values through index
-//        System.out.println("This is your old values : " + number2[0]);
-        number2[0] = 1;
-//        System.out.println("The new value you assign : " + number2[0]);
+
+        System.out.println(Arrays.toString(number2));
+        System.out.println(Arrays.toString(cars2));
+
+
+
 
     }
 
@@ -57,13 +59,14 @@ public class Array {
         /*
          B) Write the program that return that values index, if none matches return 999
          Expected Output
-         item = 6512
-         Output: 1
+         item = 4653
+         Output: 2
          item = 314141414
          Output: 999
          */
 
         int[] arr1 = {6513, 6521, 4653, 1243, 6756, 8975, 2144};
+
         return 999;
     }
 
@@ -72,7 +75,7 @@ public class Array {
          Write program that return count of all 1 in an already created array
          Expected Output
          [0,0,1,1,0,0,1,1,0,0]
-         Output: 4
+         Output: 4C
          */
         return 0;
     }
@@ -85,6 +88,11 @@ public class Array {
          Output: [1,1,1,1]
          */
         int[] arrayOfOne = new int[10];
+        for (int i = 0; i < arrayOfZeroOne.length; i++) {
+            if(arrayOfZeroOne[i] == 1) {
+                arrayOfOne[i] = arrayOfZeroOne[i];
+            }
+        }
         return arrayOfOne;
     }
 }

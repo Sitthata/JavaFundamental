@@ -6,13 +6,17 @@ public class Loops {
     public static void main(String[] args) {
         // Write the program that print all values in array
         int[] number = { 123,456,789,321,543,765,987 };
-
+        System.out.println(number.length);
 
         int[] randomSet = new int[5];
         for (int i = 0; i < randomSet.length; i++) {
             randomSet[i] = new Random().nextInt(randomSet.length);
         }
         System.out.println(Arrays.toString(randomSet)); // Array of random integer
+
+
+
+        System.out.println(plusFive(10));
     }
 
     public static void testQuiz1() {
@@ -26,6 +30,12 @@ public class Loops {
          [2,3,5,1,6]
          Output: 8
          */
+
+
         return 0;
+    }
+
+    public static int plusFive(int x) {
+        return x + 5;
     }
 }
